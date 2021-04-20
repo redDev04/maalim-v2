@@ -13,49 +13,117 @@
       href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@551&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-
     <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Maalim</title>
   </head>
   <body>
     <header>
-      <h1 class="logo">Ecole El Maalim</h1>
-      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
-      <ul class="navbar">
-        <li><a href="#" id="visibleA">Accuille</a></li>
-        <li class="dropdown">
-          <a href="#" id="visibleA">Nos Formations</a>
-          <i class="fa fa-caret-down"></i>
-          <div class="dropdown-content" id="formations">
-            <a href="#">Les Langues</a>
-            <a href="#">Informatique</a>
-            <a href="#">Gestion</a>
+      <div class="nav-container">
+        <input type="checkbox" id="check" />
+        <div class="logo-container">
+          <h3 class="logo">Ecole<span>Maalim</span></h3>
+        </div>
+
+        <div class="nav-btn">
+          <div class="nav-links">
+            <ul>
+              <li class="nav-link">
+                <a href="#" id="navElmnt">Accueil</a>
+              </li>
+              <li class="nav-link">
+                <a href="#" id="navElmnt"
+                  >Formations<i class="fas fa-caret-down"></i
+                ></a>
+                <div class="dropdown">
+                  <ul>
+                    <li class="dropdown-link">
+                      <a href="#">Informatique</a>
+                    </li>
+                    <li class="dropdown-link">
+                      <a href="#">Techniques de gestion</a>
+                    </li>
+                    <li class="dropdown-link">
+                      <a href="#"
+                        >Les Languages<!--<i class="fas fa-caret-down"></i
+                      >--></a
+                      >
+                    </li>
+                    <div class="arrow"></div>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-link">
+                <a href="#" id="navElmnt"
+                  >Qualité et Certification<i class="fas fa-caret-down"></i
+                ></a>
+                <div class="dropdown">
+                  <ul>
+                    <li class="dropdown-link">
+                      <a href="#">Politique qualité</a>
+                    </li>
+                    <li class="dropdown-link">
+                      <a href="#">Certification qualité ISO 9001</a>
+                    </li>
+                    <li class="dropdown-link">
+                      <a href="#"
+                        >Certification ICDL<!--<i class="fas fa-caret-down"></i
+                      >--></a
+                      >
+                    </li>
+                    <div class="arrow"></div>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-link">
+                <a href="#" id="navElmnt"
+                  >Tests de niveau des langues<i class="fas fa-caret-down"></i
+                ></a>
+                <div class="dropdown">
+                  <ul>
+                    <li class="dropdown-link">
+                      <a href="#">TOFEL</a>
+                    </li>
+                    <li class="dropdown-link">
+                      <a href="#">DALF</a>
+                    </li>
+                    <div class="arrow"></div>
+                  </ul>
+                </div>
+              </li>
+            </ul>
           </div>
-        </li>
-        <li class="dropdown">
-          <a href="#" id="visibleA">Qualite et Certification</a>
-          <i class="fa fa-caret-down"></i>
-          <div class="dropdown-content" id="qualite">
-            <a href="#">Politique Qualite</a>
-            <a href="#">Certification Qualite ISO 9001</a>
-            <a href="#">Certification ICDL</a>
+          <div class="log-sign">
+            <a href="#" class="btn">inscription</a>
           </div>
-        </li>
-        <li class="dropdown">
-          <a href="#" id="visibleA">Test Des Nivaux des langues</a>
-          <i class="fa fa-caret-down"></i>
-          <div class="dropdown-content" id="langues">
-            <a href="#">TOFEL</a>
-            <a href="#">DALF</a>
+        </div>
+        <div class="hamburger-menu-container">
+          <div class="hamburger-menu">
+            <div></div>
           </div>
-        </li>
-        <li><a href="#" id="visibleA">Insciption</a></li>
-        <a href="javascript:void(0);" style="font-size: 15px" class="icon"></a>
-      </ul>
+        </div>
+      </div>
     </header>
+
+    <main>
+      <section>
+        <div class="overlay">
+          <div class="container">
+            <div class="containerPara">
+              <p class="homePara">
+                L’école EL MAALIM<br />
+                située au 36 rue Molière à Sidi Bel Abbès<br />est un
+                établissement privé de formation<br />
+                professionnelle créé en 1998
+              </p>
+            </div>
+            <button class="homeBtn"><a href="#">Commencer</a></button>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
