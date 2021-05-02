@@ -23,7 +23,6 @@ html {
 body {
   font-family: "Quicksand", sans-serif;
   background-color: var(--fourth-clr-);
-  overflow: hidden;
 }
 
 ul {
@@ -341,7 +340,8 @@ header {
 
   .dropdown {
     position: relative;
-    bottom: 3em;
+    top: 2em;
+    left: 2.5;
     transform: initial;
     opacity: 1;
     pointer-events: auto;
@@ -419,13 +419,13 @@ header {
 
   .logo {
     position: relative;
-    left: 15px;
+    left: 100px;
   }
 
   #navElmnt {
-    /*position: relative;
+    position: relative;
     left: 45px;
-    top: 75px;*/
+    top: 75px;
     margin-bottom: 35px;
     text-transform: uppercase;
   }
@@ -495,9 +495,10 @@ section {
 }
 
 .homeBtn:hover {
-  color: rgb(21, 14, 86);
+  color: rgb(21, 14, 86, 10);
   background-color: #fff;
   border: 2px solid rgb(21, 14, 86);
+  transform: scale(0.98);
 }
 
 .homeBtn:hover > a {
@@ -511,3 +512,91 @@ section {
 }
 
 /** Home **/
+
+/** Nos Foramtion */
+
+.containerForm {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--primary-clr-);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.containerInfo {
+  margin-left: 15px;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: var(--fourth-clr-);
+  border-radius: 10px;
+  border: 3px solid var(--txt-clr-);
+  color: var(--txt-clr-);
+  margin-right: 15px;
+  transform: 500ms;
+  text-align: center;
+}
+
+.containerInfo:hover {
+  transform: scale(0.99);
+}
+
+.containerTitle {
+  width: 100%;
+  background-color: var(--primary-clr-);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--txt-clr-);
+  border-top: 2px solid var(--txt-clr-);
+}
+
+.FormImg {
+  width: 80%;
+}
+
+.titleForm {
+  text-transform: uppercase;
+}
+
+.titleForm::before,
+.titleForm::after {
+  font-family: "Some cool font with glyphs", serif;
+  content: "\00d7"; /* Some fancy character */
+  color: var(--txt-clr-);
+}
+
+.FormBtn {
+  height: 45px;
+  width: 120px;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: var(--primary-clr-);
+  color: var(--txt-clr-);
+  border: none;
+  font-size: .9rem;
+}
+
+.FormBtn:hover {
+  background-color: #4735f0;
+}
+
+.FormBtn a {
+  text-decoration: none;
+  color: var(--txt-clr-);
+  text-transform: uppercase;
+  font-family: "Quicksand", sans-serif;
+}
+
+@media screen and (max-width: 920px) {
+  .containerForm {
+    display: block;
+    height: 100%;
+  }
+  .containerInfo {
+    margin-bottom: 2em;
+  }
+}
